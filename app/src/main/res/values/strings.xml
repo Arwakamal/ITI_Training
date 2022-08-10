@@ -1,0 +1,23 @@
+<resources>
+    <string name="action_settings" translatable="false">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="hello_first_fragment" translatable="false">Hello first fragment</string>
+    <string name="hello_second_fragment" translatable="false">Hello second fragment. Arg: %1$s</string>
+    <string name="hello_every_one" translatable="false">hello every one</string>
+    <string name="welcome">Welcome</string>
+    <string name="first_name_arwa">First Name: Arwa</string>
+    <string name="last_name_arwa">Last Name: Kamal</string>
+    <string name="email" translatable="false">arwakamal3@gmail.com</string>
+    <string name="app_name">New App</string>
+    <string name="login">Login</string>
+    <string name="user_name">User Name :</string>
+    <string name="salary">Salary:</string>
+    <string name="age">Age:</string>
+    <string name="share">Share</string>
+
+</resources>

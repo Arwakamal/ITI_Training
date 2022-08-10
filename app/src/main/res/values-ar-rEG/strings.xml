@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق جديد</string>
+    <string name="welcome">مرحبا</string>
+    <string name="first_name_arwa">الاسم الاول : أروى</string>
+    <string name="last_name_arwa">الاسم الاخير: كمال</string>
+</resources>
