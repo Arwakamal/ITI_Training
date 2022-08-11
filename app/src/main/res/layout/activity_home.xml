@@ -10,11 +10,48 @@
         android:id="@+id/editText_data"
         android:layout_width="236dp"
         android:layout_height="107dp"
+        android:layout_marginTop="120dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_shared_pref"
+        android:layout_width="186dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="80dp"
+        android:onClick="onClick_shared"
+        android:text="@string/show_from_shared"
+        app:layout_constraintEnd_toEndOf="@+id/editText_data"
+        app:layout_constraintStart_toStartOf="@+id/editText_data"
+        app:layout_constraintTop_toBottomOf="@+id/editText_data" />
+
+    <Button
+        android:id="@+id/btn_edit_age"
+        android:layout_width="148dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClickEditName"
+        android:text="@string/edit_age"
+        app:layout_constraintEnd_toEndOf="@+id/btn_shared_pref"
+        app:layout_constraintStart_toStartOf="@+id/btn_shared_pref"
+        app:layout_constraintTop_toBottomOf="@+id/btn_shared_pref" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="145dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:onClick="onClickClear"
+        android:text="@string/clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_edit_age"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_edit_age"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_age"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

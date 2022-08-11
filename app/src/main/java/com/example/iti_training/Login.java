@@ -3,6 +3,7 @@ package com.example.iti_training;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.Editable;
 import android.view.View;
@@ -20,7 +21,7 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        startService(new Intent(this,MediaPlayerService.class));
+     //   startService(new Intent(this,MediaPlayerService.class));
         ((Button)findViewById(R.id.btn_to_home)).setOnClickListener(new View.OnClickListener(){
 
             @Override
@@ -32,6 +33,15 @@ public class Login extends AppCompatActivity {
                 username= ((EditText)findViewById(R.id.edit_text_user_name)).getText().toString();
                 salary=((EditText)findViewById(R.id.edit_text_salary)).getText().toString();
                 age=((EditText)findViewById(R.id.edit_text_age)).getText().toString();
+
+                SharedPreferences shared_=getApplicationContext().getSharedPreferences("userdata",MODE_PRIVATE);
+                SharedPreferences.Editor editor= shared_.edit();
+
+                editor.putString("Username",username);
+                editor.putString("Salary",salary);
+                editor.putString("Age",age);
+
+                editor.commit();
 
                 Intent i =new Intent(Login.this,Home.class);
 

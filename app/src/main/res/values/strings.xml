@@ -19,5 +19,10 @@
     <string name="salary">Salary:</string>
     <string name="age">Age:</string>
     <string name="share">Share</string>
+    <string name="show_from_shared">Show From Shared</string>
+    <string name="edit_age">Edit Age</string>
+    <string name="clear">Clear</string>
+    <string name="write">Write</string>
+    <string name="read">Read</string>
 
 </resources>
