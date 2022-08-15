@@ -1,6 +1,7 @@
 package com.example.iti_training;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
@@ -24,12 +25,16 @@ public class Check_Permission extends AppCompatActivity {
            Toast.makeText(this,"Permission Granted",Toast.LENGTH_SHORT).show();
        }else{
            Toast.makeText(this,"Permission NOT Granted",Toast.LENGTH_SHORT).show();
-
+           requestPermission();
        }
 
     }
     private boolean checkPermission(){
         int result= ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CAMERA);
         return  result== PackageManager.PERMISSION_GRANTED;
+    }
+    private static final int PERMISSION_REQUEST_CODE=200;
+    private void requestPermission(){
+        ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.CAMERA},PERMISSION_REQUEST_CODE);
     }
 }
