@@ -24,5 +24,6 @@
     <string name="clear">Clear</string>
     <string name="write">Write</string>
     <string name="read">Read</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
